@@ -1,22 +1,29 @@
-### Quickstart for Flask on Nanobox
+# Flask on Nanobox
 This is the companion application for the [Flask: Getting Started](https://guides.nanobox.io/flask/) guide on [guides.nanobox.io](https://guides.nanobox.io) and is pre-configured and ready to run on [nanobox](https://desktop.nanobox.io/)!
 
-After cloning the repo, **cd into the directory** and run the following commands:
+## Up and Running
 
 ``` bash
 
+# clone the code
+git clone https://github.com/nanobox-quickstarts/nanobox-flask.git
+
+# cd into the flask app
+cd nanobox-flask
+
 # build the code
-/nanobox-flask $ nanobox build
+nanobox build
 
 # start the dev environment
-/nanobox-flask $ nanobox dev start
+nanobox dev start
 
 # add a convenient way to access your app from the browser
-/nanobox-flask $ nanobox dev dns add flask.nanobox.dev
+nanobox dev dns add flask.nanobox.dev
+
+# console into the dev environment
+nanobox dev console
 
 # run the app
-/nanobox-flask $ nanobox dev console
-/app $ pip install Flask
 /app $ python hello.py
 ```
 
