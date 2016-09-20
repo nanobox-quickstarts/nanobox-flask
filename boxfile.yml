@@ -1,2 +1,8 @@
 code.build:
+  # the python engine provides the python runtime and runs pip install during
+  # the compile phase
   engine: "python"
+
+# run the application in a web component
+web.flask:
+  start: 'python hello.py'
