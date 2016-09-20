@@ -24,7 +24,7 @@ nanobox dev dns add flask.nanobox.dev
 nanobox dev console
 
 # run the app
-/app $ python hello.py
+python hello.py
 ```
 
 Visit the app from your favorite browser at: `flask.nanobox.dev:8080`
