@@ -11,11 +11,11 @@ git clone https://github.com/nanobox-quickstarts/nanobox-flask.git
 # cd into the flask app
 cd nanobox-flask
 
-# build the code
+# build runtime and compile application
 nanobox build
 
-# start the dev environment
-nanobox dev start
+# deploy runtime to dev environment
+nanobox dev deploy
 
 # add a convenient way to access your app from the browser
 nanobox dev dns add flask.nanobox.dev
@@ -23,7 +23,7 @@ nanobox dev dns add flask.nanobox.dev
 # console into the dev environment
 nanobox dev console
 
-# run the app
+# run the application
 python hello.py
 ```
 
