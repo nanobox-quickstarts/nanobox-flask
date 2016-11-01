@@ -24,7 +24,7 @@ nanobox dev console
 python hello.py
 ```
 
-Visit the app from your favorite browser at: `flask.nanobox.dev:8080`
+Visit the app from your favorite browser at: `flask.nanobox.dev:8000`
 
 ### Now What?
 For more details about how this works or for more advanced topics related to running Flask applications with nanobox visit [guides.nanobox.io/flask/](https://guides.nanobox.io/flask/)

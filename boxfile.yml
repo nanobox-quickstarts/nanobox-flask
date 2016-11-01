@@ -1,8 +1,11 @@
 code.build:
-  # the python engine provides the python runtime and runs pip install during
-  # the compile phase
-  engine: "python"
-
-# run the application in a web component
-web.flask:
-  start: 'python hello.py'
+  engine: python
+  
+  # to run the app, we'll need nginx as a reverse proxy
+  extra_packages:
+    - nginx
+    
+web.main:
+  start: 
+    nginx: nginx -c /app/etc/nginx.conf
+    flask: gunicorn -c /app/etc/gunicorn.py hello:app
