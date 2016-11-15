@@ -1,30 +1,48 @@
-# Flask with Nanobox
-This is the companion application for the [Flask: Getting Started](https://guides.nanobox.io/flask/) guide on [guides.nanobox.io](https://guides.nanobox.io) and is pre-configured and ready to run with [nanobox](https://desktop.nanobox.io/)!
+![Flask from scratch](https://guides.nanobox.io/assets/quickstart-icons/flask.png)
 
-## Up and Running
+#### Clone the repo
 
-``` bash
-
+```bash
 # clone the code
 git clone https://github.com/nanobox-quickstarts/nanobox-flask.git
 
 # cd into the flask app
 cd nanobox-flask
-
-# start the dev environment
-nanobox dev start
-
-# add a convenient way to access your app from the browser
-nanobox dev dns add flask.nanobox.dev
-
-# console into the dev environment
-nanobox dev console
-
-# run the application
-python hello.py
 ```
 
-Visit the app from your favorite browser at: `flask.nanobox.dev:8000`
+#### Run the app
 
-### Now What?
-For more details about how this works or for more advanced topics related to running Flask applications with nanobox visit [guides.nanobox.io/flask/](https://guides.nanobox.io/flask/)
+```bash
+# Run flask as you would normally, with Nanobox
+nanobox run python hello.py
+```
+
+#### Check it out
+
+```bash
+# Add a convenient way to access your app from the browser
+nanobox dns add local flask.dev
+```
+
+Visit your app -> [flask.dev:5000](http://flask.dev:5000)
+
+#### Explore
+
+With Nanobox, you don't have to have anything installed on your machine to run your app:
+
+```bash
+# drop into a Nanobox console
+nanobox run
+
+# where python is installed,
+python -v
+
+# your packages are available,
+pip list
+
+# and your code is mounted
+ls
+```
+
+#### Now What?
+For more details about running flask apps with nanobox visit [guides.nanobox.io/python/flask/](https://guides.nanobox.io/python/flask/)
