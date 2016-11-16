@@ -1,11 +1,18 @@
-code.build:
-  engine: python
-  
-  # to run the app, we'll need nginx as a reverse proxy
+run.config:
+  # engine: python
+  image: nanobox/build:beta
+  engine: python#feature/workflow-refactor
+
+  # add nginx package
   extra_packages:
     - nginx
-    
+
+# add a postgres database
+data.db:
+  image: nanobox/postgresql
+
+# add a web component and give it a "start" command
 web.main:
-  start: 
+  start:
     nginx: nginx -c /app/etc/nginx.conf
-    flask: gunicorn -c /app/etc/gunicorn.py hello:app
+    flask: gunicorn -c /app/etc/gunicorn.py app:app

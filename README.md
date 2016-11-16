@@ -1,4 +1,4 @@
-![Flask from scratch](https://guides.nanobox.io/assets/quickstart-icons/flask.png)
+![Sinatra from scratch](https://guides.nanobox.io/assets/quickstart-icons/flask.png)
 
 #### Clone the repo
 
@@ -11,23 +11,22 @@ cd nanobox-flask
 ```
 
 #### Run the app
+Run Flask as you would normally, with Nanobox
 
 ```bash
-# Run flask as you would normally, with Nanobox
-nanobox run python hello.py
+nanobox run python app.py
 ```
 
 #### Check it out
+Add a convenient way to access your app from the browser
 
 ```bash
-# Add a convenient way to access your app from the browser
 nanobox dns add local flask.dev
 ```
 
-Visit your app -> [flask.dev:5000](http://flask.dev:5000)
+Visit your app at <a href="http://flask.dev:5000" target="\_blank">flask.dev:5000</a>
 
 #### Explore
-
 With Nanobox, you don't have to have anything installed on your machine to run your app:
 
 ```bash
@@ -45,4 +44,4 @@ ls
 ```
 
 #### Now What?
-For more details about running flask apps with nanobox visit [guides.nanobox.io/python/flask/](https://guides.nanobox.io/python/flask/)
+For more details about running Flask apps with nanobox visit [guides.nanobox.io/python/flask/](https://guides.nanobox.io/python/flask/)
