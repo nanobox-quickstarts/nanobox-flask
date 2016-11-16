@@ -1,7 +1,5 @@
 run.config:
-  # engine: python
-  image: nanobox/build:beta
-  engine: python#feature/workflow-refactor
+  engine: python
 
   # add nginx package
   extra_packages:
