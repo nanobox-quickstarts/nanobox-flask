@@ -1,4 +1,4 @@
-![Sinatra from scratch](https://guides.nanobox.io/assets/quickstart-icons/flask.png)
+![Flask from scratch](https://guides.nanobox.io/assets/quickstart-icons/flask.png)
 
 #### Clone the repo
 
@@ -11,16 +11,16 @@ cd nanobox-flask
 ```
 
 #### Run the app
-Run Flask as you would normally, with Nanobox
 
 ```bash
+# Run Flask as you would normally, with Nanobox
 nanobox run python app.py
 ```
 
 #### Check it out
-Add a convenient way to access your app from the browser
 
 ```bash
+# Add a convenient way to access your app from the browser
 nanobox dns add local flask.dev
 ```
 
