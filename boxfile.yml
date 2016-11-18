@@ -1,11 +1,11 @@
 run.config:
   engine: python
 
-  # add nginx package
+  # add extra packages
   extra_packages:
     - nginx
 
-# add a postgres database
+# add a database
 data.db:
   image: nanobox/postgresql
 
@@ -14,3 +14,7 @@ web.main:
   start:
     nginx: nginx -c /app/etc/nginx.conf
     flask: gunicorn -c /app/etc/gunicorn.py app:app
+
+# add a worker component and give it a "start" command
+# worker.main:
+#   start: python worker.py
