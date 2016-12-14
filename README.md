@@ -40,7 +40,7 @@ With Nanobox, you don't have to have anything installed on your machine to run y
 nanobox run
 
 # where python is installed,
-python -v
+python --version
 
 # your packages are available,
 pip list
