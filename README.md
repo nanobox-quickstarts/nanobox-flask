@@ -19,16 +19,14 @@ cd nanobox-flask
 ## Run the app
 
 ```bash
+# Add a convenient way to access your app from the browser
+nanobox dns add local flask.dev
+
 # Run Flask as you would normally, with Nanobox
 nanobox run python app.py
 ```
 
 ## Check it out
-
-```bash
-# Add a convenient way to access your app from the browser
-nanobox dns add local flask.dev
-```
 
 Visit your app at <a href="http://flask.dev:5000" target="\_blank">flask.dev:5000</a>
 
