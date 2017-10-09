@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='ie=edge' http-equiv='x-ua-compatible'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <title>Flask Running with Nanobox</title>
+    <!-- Stylesheet & favicon - START -->
+    <link href="/static/styles.css" rel="stylesheet" />
+    <link href="/static/favicon.png" rel="icon" type="image/png" />
+    <!-- Stylesheet & favicon - END -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet'>
+  </head>
+  <body>
+    <div class='wrapper'>
+      <div class='logo'>
+        <div class='shadow'>
+          <svg id="shadow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 182 150" style="enable-background:new 0 0 182 150;" xml:space="preserve">
+            <g>
+              <linearGradient id="shadow1" gradientUnits="userSpaceOnUse" x1="91" y1="60.3529" x2="91" y2="149.6471">
+                <stop offset="0" style="stop-opacity:0.15"/>
+                <stop offset="1" style="stop-opacity:0"/>
+              </linearGradient>
+              <polygon style="fill:url(#shadow1);" points="132.472,151 49.528,151 39,59 143,59 	"/>
+              <linearGradient id="shadow2" gradientUnits="userSpaceOnUse" x1="137.1126" y1="4.0879" x2="137.1126" y2="126.1118" gradientTransform="matrix(-0.9397 0.342 0.342 0.9397 215.5601 -28.7775)">
+                <stop offset="0" style="stop-opacity:0.15"/>
+                <stop offset="1" style="stop-opacity:0"/>
+              </linearGradient>
+              <polygon style="fill:url(#shadow2);" points="104,148 181.686,119.138 143.041,0 39.041,60 	"/>
+              <linearGradient id="shadow3" gradientUnits="userSpaceOnUse" x1="100.5498" y1="17.3334" x2="100.5498" y2="139.3574" gradientTransform="matrix(0.9397 0.342 -0.342 0.9397 5.1672 -28.7775)">
+                <stop offset="0" style="stop-opacity:0.15"/>
+                <stop offset="1" style="stop-opacity:0"/>
+              </linearGradient>
+              <polygon style="fill:url(#shadow3);" points="78,148 0.314,119.138 38.959,0 142.959,59 	"/>
+            </g>
+          </svg>
+        </div>
+        <div class='icon'>
+          <svg version="1.1" id="flask" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 45.998 53.065" style="enable-background:new 0 0 45.998 53.065;" xml:space="preserve">
+            <style type="text/css">
+              .st0{fill:#595959;}
+              .st1{fill:#FFFFFF;}
+              .st2{fill:#939393;}
+              .st3{fill:#BFBFBF;}
+            </style>
+            <g id="hex-flask">
+              <polygon class="st0" points="45.998,39.837 22.996,53.117 0,39.837 0,13.279 22.996,0 45.998,13.279 	"/>
+              <path class="st1" d="M17.067,14.199c0,0,5.427,0.894,7.074,1.125c1.646,0.232,1.19,1.736-0.315,1.286
+		c-1.505-0.45-7.273-1.929-7.273-1.929L17.067,14.199z"/>
+              <polygon class="st2" points="12.765,18.964 12.379,17.041 21.215,15.163 21.729,16.996 	"/>
+              <path class="st1" d="M22.385,19.491c0,0,0.135,9.427,4.077,12.533c2.272,1.848,4.953,3.127,7.82,3.73
+		c3.357,0.804,3.215,2.739-0.572,2.894c-4.36,0.174-9.44-0.206-13.324-3.067c-6.141-4.527-7.427-12.302-7.781-14.096
+		c-1.492-0.116-1.434-2.283,0.682-2.99c2.859-0.921,5.812-1.523,8.803-1.794C23.459,16.7,23.69,19.035,22.385,19.491z"/>
+              <path class="st3" d="M12.604,21.485c0.354,1.794,1.64,9.569,7.775,14.102c3.858,2.862,8.964,3.215,13.324,3.067
+		c2.103-0.084,3.08-0.727,2.945-1.415l-0.039-0.071c0,0-9.762,0.701-14.54-3.395s-5.897-7.852-6.148-9.903
+		c-0.251-2.051,1.537-4.154,1.537-4.154s-1.286,0.399-3.074,0.797s-1.563-1.196-1.093-1.993
+		C11.17,19.202,11.118,21.369,12.604,21.485z"/>
+              <polygon class="st2" points="14.623,17.073 14.347,15.485 18.713,14.617 19.086,16.134 	"/>
+              <circle class="st2" cx="16.263" cy="14.096" r="1.132"/>
+            </g>
+          </svg>
+        </div>
+        <div class='burst'>
+          <svg id="burst" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 204 204" style="enable-background:new 0 0 204 204;" xml:space="preserve">
+            <g>
+              <line class="long" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="102" y1="26" x2="102" y2="0"/>
+              <line class="short" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="140" y1="36.182" x2="146.8" y2="24.403"/>
+              <line class="long" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="167.818" y1="64" x2="190.335" y2="51"/>
+              <line class="short" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="178" y1="102" x2="191.601" y2="102"/>
+              <line class="long" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="167.818" y1="140" x2="190.335" y2="153"/>
+              <line class="short" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="140" y1="167.818" x2="146.8" y2="179.597"/>
+              <line class="long" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="102" y1="178" x2="102" y2="204"/>
+              <line class="short" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="64" y1="167.818" x2="57.2" y2="179.597"/>
+              <line class="long" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="36.182" y1="140" x2="13.665" y2="153"/>
+              <line class="short" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="26" y1="102" x2="12.399" y2="102"/>
+              <line class="long" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="36.182" y1="64" x2="13.665" y2="51"/>
+              <line class="short" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="64" y1="36.182" x2="57.2" y2="24.403"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class='content'>
+        <h2>Woohoo! You’re running Flask with Nanobox!</h2>
+        <p>Nanobox has bootstrapped a Flask project for you inside a fully containerized, virtual Python environment. The generated codebase is available in your local filesystem. Any changes there will be reflected here.</p>
+        <div class='links'>
+          <div class='list'>
+            <h4>More Info</h4>
+            <ul>
+              <li><a href="https://guides.nanobox.io/python/flask" target="_blank">Nanobox Flask Guides</a></li>
+              <li><a href="https://guides.nanobox.io/postgresql" target="_blank">Nanobox Postgres Guides</a></li>
+              <li><a href="https://docs.nanobox.io" target="_blank">Nanobox Docs</a></li>
+            </ul>
+          </div>
+          <div class='list'>
+            <h4>Get In Touch</h4>
+            <ul>
+              <li><a href="https://nanoboxio.slack.com" target="_blank">Nanobox Slack</a></li>
+              <li><a href="mailto:hello@nanobox.io">Email Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class='footer'>
+          <p>
+            Bootstrapped with
+            <span class='heart'>
+              <svg version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 95" style="enable-background:new 0 0 100 95;" xml:space="preserve">
+                <path d="M73.896,0C63.222,0,54.046,6.456,50,15.704C45.954,6.456,36.778,0,26.104,0
+		C11.687,0,0,11.776,0,26.302C0,56.791,50,95,50,95s50-38.209,50-68.698C100,11.776,88.313,0,73.896,0z"/>
+              </svg>
+            </span>
+            by <a href="https://nanobox.io" target="_blank">Nanobox</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
